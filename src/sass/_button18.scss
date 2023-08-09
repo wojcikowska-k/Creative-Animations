@@ -1,0 +1,72 @@
+.button18 {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  width: 300px;
+  height: 100px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 100px;
+  color: white;
+  font-size: 35px;
+  letter-spacing: 5px;
+  overflow: hidden;
+}
+.button18:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transition: all 0.5s;
+}
+.button18:hover:before {
+  left: 0;
+}
+
+.button18:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transition: all 0.5s;
+}
+.button18:hover:after {
+  right: 0;
+}
+
+.span18:before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: white;
+  transition: all 0.5s;
+}
+.button18:hover .span18:before {
+  top: 0;
+}
+
+.span18:after {
+  content: "";
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background-color: white;
+  transition: all 0.5s;
+}
+.button18:hover .span18:after {
+  bottom: 0;
+}
+.button18:hover {
+  cursor: pointer;
+}

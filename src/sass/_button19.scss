@@ -1,0 +1,47 @@
+.button19 {
+  padding: 28px 55px;
+  color: var(--blue);
+  font-size: 32px;
+  letter-spacing: 3px;
+  border: 2px solid var(--blue);
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.button19:hover {
+  color: white;
+}
+.button19:hover .div19 {
+  top: 0;
+}
+
+.div19 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: calc(100% + 22px);
+  background-color: var(--blue);
+  transition: all 1s;
+  z-index: -1;
+}
+.div19:before {
+  content: '';
+  position: absolute;
+  top: -22px;
+  left: 0;
+  width: 100%;
+  height: 22px;
+  background: url('../images/wave.png');
+  animation: wavy 0.5s linear infinite;
+}
+
+@keyframes wavy {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 118px;
+  }
+}

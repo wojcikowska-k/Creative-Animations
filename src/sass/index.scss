@@ -1,2 +1,66 @@
 @import './common';
-@import './example';
+
+@import './circles.scss';
+@import './circle1.scss';
+@import './circle2.scss';
+@import './buttons.scss';
+@import './button1.scss';
+@import './button2.scss';
+@import './button3.scss';
+@import './button4.scss';
+@import './button5.scss';
+@import './button6.scss';
+@import './button7.scss';
+@import './button8.scss';
+@import './button9.scss';
+@import './button10.scss';
+@import './button11.scss';
+@import './button12.scss';
+@import './button13.scss';
+@import './button14.scss';
+@import './button15.scss';
+@import './button16.scss';
+@import './button17.scss';
+@import './button18.scss';
+@import './button19.scss';
+@import './button20.scss';
+@import './button21.scss';
+@import './button22.scss';
+@import './button23.scss';
+
+:root {
+  --dark-color: #071952;
+  --dark-teal: #0b666a;
+  --teal: #35a29f;
+  --light-teal: #97feed;
+  --red: #f44336;
+  --blue: #00aeff;
+  --grey: #777;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: var(--dark-teal);
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 50px;
+
+  &btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}

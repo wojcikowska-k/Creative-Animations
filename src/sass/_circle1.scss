@@ -1,0 +1,56 @@
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: var(--light-teal);
+  border-radius: 50%;
+  border: 5px solid var(--teal);
+  border-top: 5px solid var(--light-teal);
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform: rotate(180deg);
+  transition: 250ms ease-in-out;
+  position: relative;
+}
+@keyframes spin {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+.small-circle {
+  width: 30px;
+  height: 30px;
+  background-color: var(--teal);
+  border-radius: 50%;
+  transition: 500ms ease-in-out;
+  transform: translatex(0%) translatey(-10%);
+}
+.smallest-circle {
+  width: 10px;
+  height: 10px;
+  background-color: var(--teal);
+  border-radius: 50%;
+  transform: translatex(300%) translatey(-280%);
+  transition: 500ms ease-in-out;
+}
+.circle:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+.circle:hover.circle {
+  border-top: 5px solid var(--dark-color);
+  border-color: var(--dark-color);
+  background-color: white;
+}
+.circle:hover .small-circle {
+  transform: translatex(32%) translatey(32%);
+  background-color: var(--dark-color);
+}
+.circle:hover .smallest-circle {
+  transform: translatex(200%) translatey(-100%);
+  background-color: var(--dark-color);
+}

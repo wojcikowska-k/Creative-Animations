@@ -1,0 +1,26 @@
+.buttons {
+  background-color: white;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+
+  position: relative;
+  z-index: 1;
+
+  &__dark {
+    background-color: var(--dark-color);
+  }
+  &__teal {
+    background-color: var(--teal);
+  }
+}
+
+a {
+  text-decoration: none;
+}

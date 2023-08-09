@@ -1,0 +1,45 @@
+.button21 {
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  letter-spacing: 7px;
+  padding: 18px 30px;
+  background: transparent;
+  font-size: 28px;
+  color: white;
+}
+.button21:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: -1%;
+  top: -5px;
+  background-color: var(--dark-color);
+  transform: skewx(30deg);
+  z-index: -1;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0, 1.55);
+}
+.button21:hover:before {
+  transform: skewx(0deg);
+  left: 50%;
+  top: 0;
+}
+
+.button21:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 51%;
+  top: 5px;
+  background-color: var(--red);
+  transform: skewx(30deg);
+  z-index: -1;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0, 1.55);
+}
+.button21:hover:after {
+  transform: skewx(0deg);
+  left: 1%;
+  top: 0;
+}

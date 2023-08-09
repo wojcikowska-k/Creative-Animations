@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=BenchNine&family=Courier+Prime:wght@400;700&display=swap");
+
+.button16 {
+  border: none;
+  padding: 20px 60px;
+  background-color: var(--red);
+  color: white;
+  font-family: "BenchNine", sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+}
+
+.button16:before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -5px;
+  left: -5px;
+  border-top: 2px solid var(--red);
+  border-left: 2px solid var(--red);
+  transition: all 0.2s;
+}
+.button16:hover:before,
+.button16:hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+.button16:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  bottom: -5px;
+  right: -5px;
+  border-bottom: 2px solid var(--red);
+  border-right: 2px solid var(--red);
+  transition: all 0.2s;
+}

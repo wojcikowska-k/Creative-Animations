@@ -1,0 +1,31 @@
+.button1 {
+  color: var(--dark-color);
+  font-family: sans-serif;
+  font-size: 45px;
+
+  border: 5px solid var(--dark-color);
+  padding: 40px 80px;
+
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+.button1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--light-teal);
+  height: 100%;
+  width: 100%;
+  transform-origin: bottom right;
+  transform: rotate(90deg);
+  transition: transform 1s;
+  z-index: -1;
+}
+.button1:hover:before {
+  transform: rotate(0deg);
+}
+.button1:hover {
+  transform: rotate(0deg);
+}
