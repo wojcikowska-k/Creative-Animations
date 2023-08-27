@@ -27,6 +27,7 @@
 @import './button21.scss';
 @import './button22.scss';
 @import './button23.scss';
+@import './header.scss';
 
 :root {
   --dark-color: #071952;
@@ -53,9 +54,9 @@ a {
 }
 
 .container {
-  margin: 0 50px;
+  margin: 0;
 
-  &btns {
+  &__btns {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -63,4 +64,12 @@ a {
     flex-wrap: wrap;
     width: 100%;
   }
+}
+
+.wrapper {
+  margin: 0 50px;
+}
+
+.is-hidden {
+  display: none;
 }
